@@ -203,6 +203,7 @@ class Program
         Console.WriteLine("<-- Majalah Teknologi -->");
         mat.kategoriAnak();
         mat.topikTeknologi();
+
     }
 }
 
