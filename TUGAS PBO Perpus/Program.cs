@@ -64,7 +64,7 @@ class Novel : Buku
         this.judul = judul;
         this.tahun = tahun;
     }
-    public void cekSinopsis()
+    public void BacaSinopsis()
     {
         Console.WriteLine("Sinopsisnya adalah bla bla bla (baca sendiri dah gede)");
     }
@@ -86,7 +86,7 @@ class Komik : Buku
         this.judul = judul;
         this.tahun = tahun;
     }
-    public void cekSinopsis()
+    public void BacaSinopsis()
     {
         Console.WriteLine("Sinopsisnya adalah bla bla bla (baca sendiri dah gede)");
     }
@@ -189,11 +189,11 @@ class Program
         Console.WriteLine("Method Khusus");
         Console.WriteLine("");
         Console.WriteLine("<-- NOVEL -->");
-        no.cekSinopsis();
+        no.BacaSinopsis();
         no.tampilkanIlustrasi();
         Console.WriteLine("");
         Console.WriteLine("<-- KOMIK -->");
-        ko.cekSinopsis();
+        ko.BacaSinopsis();
         ko.tampilkanIlustrasi();
         Console.WriteLine("");
         Console.WriteLine("<-- Majalah Anak -->");
@@ -204,6 +204,38 @@ class Program
         mat.kategoriAnak();
         mat.topikTeknologi();
 
+        //SOAL NO 1
+        Console.WriteLine("");
+        Console.WriteLine("-- SOAL NO 1 --");
+        Console.WriteLine("NOVEL");
+        no.cekDeskripsi();
+        Console.WriteLine("");
+        Console.WriteLine("MAJALAH");
+        ma.cekDeskripsi();
+
+        //SOAL NO 2
+        Console.WriteLine("");
+        Console.WriteLine("-- SOAL NO 2 --");
+        Console.WriteLine("NOVEL");
+        no.BacaSinopsis();
+
+        //SOAL NO 3
+        Console.WriteLine("");
+        Console.WriteLine("-- SOAL NO 3 --");
+        Console.WriteLine("NOVEL");
+        no.cekDeskripsi();
+
+        //SOAL NO 4
+        Console.WriteLine("");
+        Console.WriteLine("-- SOAL NO 4 --");
+        Console.WriteLine("Majalah Teknologi");
+        mat.topikTeknologi();
+
+        //SOAL NO 5
+        Console.WriteLine("");
+        Console.WriteLine("-- SOAL NO 5 --");
+        Item item1 = new Komik("Kentaro Miura", "Berserk", 1990);
+        item1.cekDeskripsi();
 
     }
 }
